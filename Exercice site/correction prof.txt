@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <header class="d-flex justify-content-between border align-items-center">
+
+        <img src="" alt="" class="border" id="logo">
+
+        <nav>
+            <ul class="d-flex">
+                <li>
+                    <a href="#">Lien 1</a>
+                </li>
+                <li>
+                    <a href="#">Lien 2</a>
+                </li>
+                <li>
+                    <a href="#">Lien 3</a>
+                </li>
+                <li>
+                    <a href="#">Lien 4</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="d-flex justify-content-center border bg-purple">
+
+        <div class="d-flex w-70 border">
+
+            <img class="w-50" src="img/1.png" alt="Image de l'entreprise">
+
+            <div class="d-flex flex-column justify-content-center w-50">
+
+                <h1>Ceci est le titre de mon site</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, quia laborum provident error
+                    excepturi ad aut dolor fugiat fugit doloribus repellat.</p>
+                <a href="#">En savoir plus</a>
+
+            </div>
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.border {
+    border: 2px solid black;
+}
+
+#logo {
+    height: 50px;
+    width: 200px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+header {
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+    padding: 20px;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.bg-purple {
+    background-color: purple;
+}
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <header class="d-flex justify-content-between border align-items-center">
+
+        <img src="" alt="" class="border" id="logo">
+
+        <nav>
+            <ul class="d-flex">
+                <li>
+                    <a href="#">Lien 1</a>
+                </li>
+                <li>
+                    <a href="#">Lien 2</a>
+                </li>
+                <li>
+                    <a href="#">Lien 3</a>
+                </li>
+                <li>
+                    <a href="#">Lien 4</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="d-flex justify-content-center border bg-purple">
+
+        <div class="d-flex w-70 border">
+
+            <img class="w-50" src="img/1.png" alt="Image de l'entreprise">
+
+            <div class="d-flex flex-column justify-content-center w-50">
+
+                <h1>Ceci est le titre de mon site</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, quia laborum provident error
+                    excepturi ad aut dolor fugiat fugit doloribus repellat.</p>
+                <a href="#">En savoir plus</a>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="d-flex flex-column align-items-center" id="values">
+
+        <h2>Super titre de PGM</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat delectus ullam odio, amet animi voluptates soluta sint est modi blanditiis hic ea ipsum. Fugit, quaerat. Fuga facilis autem est nesciunt?</p>
+        <ul class="d-flex">
+            <li class="text-center">
+                <span>20</span>
+                <p>Lorem ipsum</p>
+            </li>
+            <li class="text-center">
+                <span>20</span>
+                <p>Lorem ipsum</p>
+            </li>
+            <li class="text-center">
+                <span>20</span>
+                <p>Lorem ipsum</p>
+            </li>
+            <li class="text-center">
+                <span>20</span>
+                <p>Lorem ipsum</p>
+            </li>
+        </ul>
+
+    </section>
+
+
+</body>
+
+</html>
+
+
+
+
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.border {
+    border: 2px solid black;
+}
+
+#logo {
+    height: 50px;
+    width: 200px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+header {
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+    padding: 20px;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.bg-purple {
+    background-color: purple;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+#values ul li {
+    padding: 10px;
+}
