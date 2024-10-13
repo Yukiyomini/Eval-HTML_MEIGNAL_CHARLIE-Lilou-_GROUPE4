@@ -1,0 +1,182 @@
+/* Global reset pour définir box-sizing et supprimer marges/paddings par défaut */
+* {
+    box-sizing: border-box; /* Assure que les marges et les paddings sont inclus dans les dimensions des éléments */
+    margin: 0;
+    padding: 0;
+}
+
+/* Style pour les paragraphes */
+p {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Style pour les titres h1 */
+h1 {
+    font-size: 30px; /* Taille du texte des titres */
+    color: red; /* Couleur rouge pour le titre */
+    font-style: italic; /* Texte en italique */
+    text-align: center; /* Aligne le titre au centre */
+}
+
+/* Image de fond pour le body */
+body {
+    background: url(fond1.png); /* Image de fond */
+    background-size: cover; /* Ajuste l'image pour couvrir tout l'écran */
+}
+
+/* Conteneur principal pour aligner l'image et le texte côte à côte */
+.container-flex {
+    display: flex; /* Flexbox pour aligner horizontalement l'image et le texte */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    height: 100vh; /* Le conteneur occupe toute la hauteur de la page */
+    gap: 20px; /* Espacement entre l'image et le texte */
+}
+
+/* Style pour l'image */
+.image {
+    width: 350px; /* Largeur de l'image */
+    height: auto; 
+    border-radius: 10px; /* Coins arrondis */
+    transition: transform 0.3s ease-in-out; /* Transition lors du survol */
+}
+
+
+/* Effet zoom sur l'image au survol */
+.image:hover {
+    transform: scale(1.1); /* Zoom de 10% */
+}
+
+/* Conteneur pour le texte */
+.texte {
+    width: 800px; /* Largeur du conteneur de texte */
+    padding: 20px; /* Espacement intérieur */
+    background: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+    color: white; /* Couleur du texte */
+    border-radius: 10px; /* Coins arrondis */
+    text-align: justify; /* Justification du texte pour un alignement propre */
+    transition: transform 0.3s ease-in-out; /* Transition lors du survol */
+}
+.texte:hover{
+    transform: scale(1.1);
+}
+/* Style pour le bouton sous l'image */
+.style {
+    width: 370px; /* Largeur du bouton */
+    height: 75px; /* Hauteur fixe pour le bouton */
+    padding: 10px; /* Espacement interne du bouton */
+    margin: 10px; /* Espace autour du bouton */
+    color: white; /* Couleur du texte */
+    background: rgba(255, 0, 0, 0.65); /* Couleur de fond rouge avec transparence */
+    border-radius: 10px; /* Coins arrondis */
+    text-align: center; /* Centrer le texte à l'intérieur du bouton */
+    cursor: pointer; /* Changement du curseur en main lors du survol */
+    transition: 0.3s ease-in-out; /* Transition sur l'arrière-plan lors du survol */
+}
+
+/* Effet lors du survol du bouton */
+.style:hover {
+    background: rgba(255, 0, 0, 0.85); /* Fond plus opaque au survol */
+}
+
+#lienswiki {
+    color: red;
+}
+
+/* Conteneur pour le bouton */
+.boutons2 {
+    display: flex; /* Utilisation de Flexbox pour les aligner */
+    align-items: center; /* Alignement vertical des éléments */
+    justify-content: flex-end; /* Aligner les boutons à droite */
+    position: relative;
+    margin-top: 20px; /* Espace entre les boutons et le contenu principal */
+}
+
+/* Partie footer (pied de page pour les 2 sites) */
+.footer {
+    display: flex;
+    justify-content: space-between; /* Répartir les éléments à gauche et à droite */
+    align-items: center;
+    position: relative;
+    padding: 20px; /* Espace intérieur */
+    background: black; /* Fond du pied de page */
+    color: white; /* Couleur du texte dans le footer */
+}
+
+/* Style pour les liens dans le footer */
+.liens {
+        display:flex;
+        position: absolute ; /* Positionné par rapport au footer */
+        bottom: 40px; /* En bas du footer */
+        width: 100%;
+        display: absolute;
+        justify-content: center;
+        gap: 15px;
+        padding: 10px;
+        right: 58px;
+        text-decoration: underline;
+    
+}
+
+/* Style pour les liens hypertexte */
+.liens a {
+    color: red; /* Couleur des liens */
+    font-style: italic; /* Texte en italique */
+}
+
+
+/* style du texte pour le lien google maps */
+h5 {
+    width: 200px; /* Largeur du conteneur de texte */
+    text-align: right; 
+    color: white;
+    font-size: 5px;
+}
+
+/*permet de déposer une condition spécial qui vient  limiter la taille de l’écran sur
+laquelle on veut appliquer des classes CSS*/
+/* Responsive pour les écrans de 600px de largeur et moins (smartphones) */
+@media screen and (max-width: 600px) {
+
+    /* Ajustement du body pour mobile */
+    body {
+        background-size: cover; /* ajuste l'image de fond */
+    }
+
+    /* Ajustement du conteneur-flex pour tel */
+    .container-flex {
+        flex-direction: column; /* affiche en colonne sur mobile */
+        height: auto; /* ajuste la hauteur automatiquement */
+    }
+
+    .image {
+        width: 100%; /* Les images prennent toute la largeur */
+        height: auto;
+    }
+
+    /* Ajustement du texte pour mobile */
+    .texte {
+        width: 95%; /* Prend presque toute la largeur */
+        height: auto; /* Ajustement automatique de la hauteur */
+        font-size: 16px; /* Taille de police réduite pour mobile */
+    }
+
+    /* Réduction de la taille des titres */
+    h1 {
+        font-size: 24px; /* Ajuste la taille du titre sur mobile */
+    }
+
+    /* Réduction et alignement de bouton */
+    .boutons2 {
+        flex-direction: column; /* Affiche le bouton en colonne sur mobile */
+        margin: 10px auto; /* Centrage du bouton */
+    }
+
+    /* Ajustement du footer pour mobile */
+    .footer {
+        flex-direction: column; /* Affiche le footer en colonne */
+        justify-content: center;
+        gap: 10px; /* Espace entre les éléments du footer */
+    }
+}
